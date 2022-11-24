@@ -1,0 +1,186 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: lightgrey;
+    min-height: 100vh;
+}
+/*esto es el header y el menu*/
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: darkblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    border: solid darkblue 2px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.logo h1{
+    color: white;
+    font-size: xx-large;
+}
+nav a{
+    color: white;
+    font-size: larger;
+    margin-right: 10px;
+}
+nav a:hover{
+    color: orange;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+@media (max-width:400px){
+    nav a{
+        font-size: smaller;
+    }
+}
+@media (max-width:280px){
+    nav a{
+        font-size:x-small;
+    }
+}
+@media (max-width:224px){
+    nav a{
+        font-size:xx-small;
+    }
+}
+/*esto es la portada de la pagina*/
+.portada{
+    text-align: center;
+    background-image: url(images/Portada.jpg);
+    background-size: cover;
+}
+.portada img{
+    margin-top: 1em;
+}
+.portada h1{
+    color: white;
+}
+@media (max-width:700px){
+    .portada h1{
+        font-size: smaller;
+    }
+}
+/*esto es el mapa del tour*/
+.mapa{
+    text-align: center;
+}
+.mapa h2{
+    margin-top: 0.5em;
+}
+.mapa img{
+    margin-bottom: 1em;
+}
+@media (max-width:800px){
+    .mapa h2{
+        font-size: smaller;
+    }
+}
+@media (max-width:520px){
+    .mapa h2{
+        font-size: xx-small;
+    }
+}
+/*ateneo*/
+.ateneo{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ateneo img{
+    border: black solid 2px;
+}
+.ateneo p{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+@media (max-width:800px){
+    .ateneo h2{
+        font-size: smaller;
+    }
+    .ateneo p{
+        font-size: smaller;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+@media (max-width:520px){
+    .ateneo h2{
+        font-size: xx-small;
+    }
+    .ateneo p{
+        font-size: xx-small;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+/*centro cultural*/
+.centro-cultural{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.centro-cultural img{
+    border: black solid 2px;
+}
+.centro-cultural p{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+@media (max-width:800px){
+    .centro-cultural h2{
+        font-size: smaller;
+    }
+    .centro-cultural p{
+        font-size: smaller;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+@media (max-width:520px){
+    .centro-cultural h2{
+        font-size: xx-small;
+    }
+    .centro-cultural p{
+        font-size: xx-small;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+/*esto es el footer*/
+.footer{
+    background-color: black;
+    position: sticky;
+    top: 100%;
+}
+.footer ul li a{
+    color: white;
+    margin-left: 1em;
+}
+.footer ul li a:hover{
+    color: orange;
+}
+.footer p{
+    color: white;
+    margin-left: 1em;
+}
+.footer p a:hover{
+    color: blue;
+}

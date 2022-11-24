@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <style>
+      #MostrarCantidadPalermo{
+          display: none;
+      }
+      #MostrarCantidadRecoleta{
+          display: none;
+      }
+      header{
+         display: flex;
+         min-height: 70px;
+         background-color: darkblue;
+         justify-content: space-between;
+         align-items: center;
+         padding: 10px;
+      }
+     .logo{
+        display: flex;
+        align-items: center;
+      }
+     .logo img{
+        border: solid darkblue 2px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+     .logo h1{
+        color: white;
+        font-size: xx-large;
+      }
+     nav a{
+        color: white;
+        font-size: larger;
+        margin-right: 10px;
+      }
+     nav a:hover{
+        color: orange;
+      }
+      body{
+        background-color: azure
+      }
+      form{
+        background-color: antiquewhite
+      }
+      input{
+        background-color: darkgrey
+      }
+     
+      
+      textarea{
+        background-color: darkgray
+      }
+
+  </style>
+
+     
+    <!--- Boostrap --->
+  
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>-->
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Semi+Condensed:ital,wght@0,100;1,200;1,400;1,600&family=Blaka&family=Libre+Bodoni&display=swap');
+    </style>
+    <link rel="stylesheet" href="style-palermo.css">
+    <style>
+      label{
+        background-color: darkseagreen;
+      }
+      button{
+        background-color: green;
+      }
+      .bg{
+        background-image: url("./Imagenes/Imagenubicacion.jpg");
+        background-position: center center;
+        background-size: cover;
+        
+        
+      }
+       .cont{
+        margin-top: 400px;
+        background-color: #fd7e14 ;
+        border-radius: 20px;
+        justify-content: center;
+        opacity: 0.7;
+       }
+       .ig{
+        color: #fd7e14;
+       }
+       h1{
+         text-align: center;
+       }
+       .nav a{
+        text-align: end;
+       }
+
+    </style>
+     <link rel="shortcut icon" href="./Imagenes/pizza.png">
+</head>
+<body >
+  <div class="container">
+
+
+     <div class="logo">
+        <img src="images/logo-header.jpg" width="50px" height="50px" alt="logo-header">
+        <h1>Interesting Turismo</h1>
+        <nav>
+          <a href="index.html">Página Principal</a>
+       </nav>
+    
+     </div>   
+ 
+        <div class="col p-5 rounded-end ">
+            <div class="text-end   contact_icon">
+                <span class="contact__logo fa fa-user-circle fa-beat-fade fa-solid mt-3" style="--fa-beat-fade-opacity: 0.67; --fa-beat-fade-scale: 1.075; --fa-animation-duration: 1.5s;"></span>
+            </div>
+              <h2 class="ubicacion fw-bold text-center py-5">Dejá tus consultas</h2>
+
+              <form id="formulario" action="">
+                <div class="mb-4 d-flex flex-column  contact">
+                  <div class="form-control">
+                  <label  for="names">Nombres*</label>
+                  <input class="mb-4 " type="text" id="names">
+                  <p class="text-danger"></p>
+                </div>
+                <div class="form-control">
+                  <label for="phone">Telefono / Celular </label>
+                  <input class="mb-4 " type="text" id="phone">
+                  <p class="text-danger"></p>
+                </div>
+                <div class="form-control" >
+                  <label for="email" class="form-label">Correo electrónico *</label>
+                  <input type="email" id="email"  class=" mb-4  form-control">
+                  <p class="text-danger"></p>
+                </div>
+                <div class="form-control">
+                  <label for="mensaje">Mensaje / Consulta *</label>
+                  <textarea class="mb-4 " name="" id="mensaje" ></textarea>
+                  <p class="text-danger"></p>
+                </div>
+
+                <div>
+                  <p class="ubicacion"><span class="ubicacion text-danger">Advertencia:</span>  Los espacios que estan con un "*" son campos obligatorios</p>
+                </div>
+                <div class="d-flex align-self-end">
+                  <button class="btn-contact mx-3" >Enviar mensaje</button>
+                  <button onclick="location.href = location.href" class="btn-contact" >Recargar y terminar</button>
+                </div>
+
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </main>
+
+      <script src="validacion.js"></script>
+      
+          
+
+
+      
+      <footer class=" bg-dark text-white">
+        <div class="container d-flex justify-content-center text-center">
+          <nav class="row ">
+           
+            <div class="pt-3 ">
+              <ul class=" fa-2x d-flex  justify-content-center text-center list-unstyled">
+                <li class="px-1 nav-item "><a target="_blank" href="https://www.instagram.com/inter.turismo/"><i class="ig fa-beat fa-brands fa-instagram" style="--fa-beat-scale: 1.2;"></i></a></li>
+                <li class="px-1 nav-item"><a target="_blank" href="https://wa.me/+54113481353"><i class=" text-success fa-brands fa-whatsapp fa-beat" style= "--fa-beat-scale: 1.2;"> </i></a></li>
+                
+              </ul>
+            </div>
+              <p class="fw-bold derechos"> © 2022 Todos los derechos reservados. <br>
+              Diseño y desarrollo: Grupo13</p>
+            </div>
+        
+        
+          </nav>
+        </div>
+      </footer>
+
+      <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+    })
+    })()
+</script>
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a381c2aeac.js" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+ 
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+  
+  </body>
+</html>

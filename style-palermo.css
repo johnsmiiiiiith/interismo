@@ -1,0 +1,190 @@
+*{
+    font-family: Arial;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: lightgrey;
+    min-height: 100vh;
+}
+/*esto es el header y el menu*/
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: darkblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    border: solid darkblue 2px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.logo h1{
+    color: white;
+    font-size: xx-large;
+}
+nav a{
+    color: white;
+    font-size: larger;
+    margin-right: 10px;
+}
+nav a:hover{
+    color: orange;
+}
+nav a:link{
+    background-color: rgba(34, 67, 56, 0.889); border-radius: 5%;
+}
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+@media (max-width:400px){
+    nav a{
+        font-size: smaller;
+    }
+}
+@media (max-width:280px){
+    nav a{
+        font-size:x-small;
+    }
+}
+@media (max-width:224px){
+    nav a{
+        font-size:xx-small;
+    }
+}
+/*esto es la portada de la pagina*/
+.portada{
+    text-align: center;
+    background-image: url(images/Portada.jpg);
+    background-size: cover;
+}
+.portada img{
+    margin-top: 1em;
+}
+.portada h1{
+    color: white;
+}
+@media (max-width:700px){
+    .portada h1{
+        font-size: smaller;
+    }
+}
+/*esto es el mapa del tour*/
+.mapa{
+    text-align: center;
+}
+.mapa h2{
+    margin-top: 0.5em;
+}
+.mapa img{
+    margin-bottom: 1em;
+}
+@media (max-width:800px){
+    .mapa h2{
+        font-size: smaller;
+    }
+}
+@media (max-width:520px){
+    .mapa h2{
+        font-size: xx-small;
+    }
+}
+/*botanico*/
+.botanico{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.botanico img{
+    border: black solid 2px;
+}
+.botanico p{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+@media (max-width:800px){
+    .botanico h2{
+        font-size: smaller;
+    }
+    .botanico p{
+        font-size: smaller;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+@media (max-width:520px){
+    .botanico h2{
+        font-size: xx-small;
+    }
+    .botanico p{
+        font-size: xx-small;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+/*bosque*/
+.bosque{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.bosque img{
+    border: black solid 2px;
+}
+.bosque p{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+@media (max-width:800px){
+    .bosque h2{
+        font-size: smaller;
+    }
+    .bosque p{
+        font-size: smaller;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+@media (max-width:520px){
+    .bosque h2{
+        font-size: xx-small;
+    }
+    .bosque p{
+        font-size: xx-small;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+/*esto es el footer*/
+.footer{
+    background-color: black;
+    position: sticky;
+    top: 100%;
+    width: 100%;
+}
+.footer ul li a{
+    color: white;
+    margin-left: 1em;
+}
+.footer ul li a:hover{
+    color: orange; 
+}
+.footer p{
+    color: white;
+    margin-left: 1em;
+}
+.footer p a:hover{
+    color: blue;
+}
